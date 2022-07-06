@@ -1,0 +1,62 @@
+.containerforsearch {
+    margin: 10rem 0 0 0;
+    text-align: center;
+
+    &__inputfield {
+        width: 80vw;
+        padding: 1.5em;
+        box-shadow: $searchfieldbg;
+        color: $searchfieldtext;
+        border: none;
+        border-radius: 20px;
+    }
+    &__inputfield:active {
+        box-shadow: $searchfieldbg; 
+    }
+}
+
+.one {
+    box-shadow: inset 5em 1em $lightgreen;
+    margin: 5rem 3.5rem 0 3.5rem;
+
+    &__intro {
+        padding: 0 0 0 2rem;
+        font-size: 1.8em;
+        font-weight: 100;  
+    }
+}
+
+.containerfaq article {
+    margin: 5rem 3.5rem 0 3.5rem;
+    background-color: $containerfaq;
+}
+
+.containerfaq {
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__title {
+        padding:0 2rem 0 2rem;
+        color: $questionTitle;
+        font-size: 15px;
+    }
+    &__answer {
+        color: $questionanswer;
+        padding-top: 1rem;
+        padding-right: 2rem;
+        font-size: 12px;
+    }
+ 
+    &__seemore  {
+        text-align: end;
+        padding: 1.2rem;
+        background-color: $lightgreen;
+        border: none;
+        color: $questionanswer;
+        
+    }
+
+
+}

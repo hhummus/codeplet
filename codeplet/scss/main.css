@@ -1,0 +1,186 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.topnav__buttonElement {
+  cursor: pointer;
+  margin: 2rem 0 0 0;
+  padding: 0.5em 1em 0.5em 1em;
+  background: white;
+  color: #0e6218;
+  border: 1px solid #0e6218;
+  border-radius: 5rem;
+}
+
+.topnav__buttonElement:hover, .topnav__buttonElement:active {
+  background-color: #c2d7c5;
+  color: #0e6218;
+  border: none;
+  -webkit-transition: background-color 500ms;
+  transition: background-color 500ms;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: black;
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.form-error {
+  display: none;
+  color: #760505;
+  font-size: 0.9rem;
+  margin-top: 2px;
+}
+
+.warning {
+  background-color: #7c6c34;
+  padding: 1rem;
+}
+
+.success {
+  background-color: #0e6218;
+  padding: 1rem;
+}
+
+input {
+  width: 100%;
+  margin-top: 2px;
+  padding: 10px;
+  font-size: 16px;
+}
+
+label {
+  display: block;
+  margin-top: 1rem;
+}
+
+.topnav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 2rem 0 2rem;
+}
+
+.topnav__title {
+  margin: 2rem 0 0 0;
+}
+
+.containerforsearch {
+  margin: 10rem 0 0 0;
+  text-align: center;
+}
+
+.containerforsearch__inputfield {
+  width: 80vw;
+  padding: 1.5em;
+  -webkit-box-shadow: inset 0 0 5px #dddada;
+          box-shadow: inset 0 0 5px #dddada;
+  color: #c7c5c5;
+  border: none;
+  border-radius: 20px;
+}
+
+.containerforsearch__inputfield:active {
+  -webkit-box-shadow: inset 0 0 5px #dddada;
+          box-shadow: inset 0 0 5px #dddada;
+}
+
+.one {
+  -webkit-box-shadow: inset 5em 1em #c2d7c5;
+          box-shadow: inset 5em 1em #c2d7c5;
+  margin: 5rem 3.5rem 0 3.5rem;
+}
+
+.one__intro {
+  padding: 0 0 0 2rem;
+  font-size: 1.8em;
+  font-weight: 100;
+}
+
+.containerfaq article {
+  margin: 5rem 3.5rem 0 3.5rem;
+  background-color: #F8F8F8;
+}
+
+.containerfaq__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.containerfaq__title {
+  padding: 0 2rem 0 2rem;
+  color: #4E4D4D;
+  font-size: 15px;
+}
+
+.containerfaq__answer {
+  color: #080808;
+  padding-top: 1rem;
+  padding-right: 2rem;
+  font-size: 12px;
+}
+
+.containerfaq__seemore {
+  text-align: end;
+  padding: 1.2rem;
+  background-color: #c2d7c5;
+  border: none;
+  color: #080808;
+}
+/*# sourceMappingURL=main.css.map */

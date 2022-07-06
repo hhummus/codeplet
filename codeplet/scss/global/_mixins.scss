@@ -1,0 +1,6 @@
+@mixin button-on-hover {
+    background-color: $lightgreen;
+    color: $darkgreen;
+    border: none;
+    transition: background-color 500ms;
+}

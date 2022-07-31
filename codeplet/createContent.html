@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Helena Løkkeberg" />
     <meta name="description" content="Wikipedia styled platform for coders to meet and share their errors and how to solve common flaws when coding." />
-    <title>Wikipedia for programmers</title>
-    <link rel="stylesheet" href="scss/main.css" />
+    <title>Wikipedia for programmers | add Post</title>
+    <link rel="stylesheet" href="scss/addPost.css" />
     </head>
     <body>
     <header class="topnav">
@@ -42,32 +42,22 @@
                     </div>
                 </form>
             </div> 
-
-
         </div>
-       
     </header>
     <main>
-        <section class="one">
-            <h2 class="one__intro">The biggest growing community of developers. 
-            </h2>
-        </section>
+        <button class="backOnePage" onclick="history.go(-1)"><</button>
 
-        <div class="containerforsearch">
-            <label for="search">
-                <input type="search" id="search"  class="containerforsearch__inputfield">
-            </label>
+        <div class="createFaq">
+            <form>
+                <legend id="legend">Create FAQ</legend>
+                <label for="question">Question</label><br>
+                <textarea id="question" name="question" required="required" rows="2" cols="30"></textarea>
+                <label for="answer">Answer</label><br>
+                <textarea id="answer" name="answer" required="required" rows="4" cols="40"></textarea>
+                <input type="button" value="Create FAQ" id="creatingFaq">
+              </form>
         </div>
 
-        <section class="containerFaq"></section>
-        <section class="newArray"></section>
-
-        
-        <p class="addPost"><a href="createContent.html">Add your own FAQ here</a></p>
-      
     </main>
-
-
-    <script src="js/fetchData.js" type="module"></script>
+    <script src="js/createPost.js" type="module"></script>
     </body>
-</html

@@ -1,7 +1,6 @@
 import { checkInput } from "./checkUser.js";
 import { getUsername } from "./utils/storage.js";
-const loginButton = document.querySelector(".login");
-const activeLoggedIn = document.querySelector(".active")
+const youAreLoggedOut = document.getElementById('openModal');
 
 export function loginModal() {
 
@@ -43,26 +42,22 @@ function openModal() {
 }
 
 
-export function youAreLoggedIn() {
-    // username returns undefined, why? 
-    const username = getUsername();
+ function youAreLoggedIn() {
 
+    const username = getUsername();
+  
     var modal = document.getElementById("myModal");
 
     if(username) {
-      // trying to change the login button to show that you are now
-      // logged in
-      activeLoggedIn.innerHTML = `Hi, ${username}`;
+      // showing that you are logged in
+      youAreLoggedOut.innerText = `Hi, ${username}`;
       modal.style.display = "none";
-      document.href = '/';
-
+     
+    } else if(!username) {
+        // logged out 
+        youAreLoggedOut.innerText = `Log in`;
     }
-    else {
-        if(!username) {
-            loginButton;
-           
-        }
-    }
+   
 }
 
 

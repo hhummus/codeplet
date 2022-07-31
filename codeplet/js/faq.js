@@ -38,7 +38,7 @@ export function makeFaq(data) {
         let searchTerm = event.target.value;
         
       
-        // filtering API question posts to search value//
+        // filtering API question posts to search value //
         const matchedData = qa.filter(item => {
                 const question = item.acf.question.toLowerCase();
                 const castedSearchTerm = searchTerm.toLowerCase();

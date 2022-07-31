@@ -69,9 +69,6 @@ function checkLength(value, len) {
         if(json.user_nicename) {
             saveToken(json.token);
             saveUser(json.user_nicename);
-
-            location.href = "/";
-
             
         } 
          if(json.error) {

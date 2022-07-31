@@ -1,13 +1,13 @@
 import { rootUrl } from "./utils/constant.js";
 import { generateDetail } from "./generateDetail.js";
-import { loginModal, youAreLoggedIn } from "./login.js";
+import { loginModal } from "./login.js";
 
 const queryString = document.location.search;
 const params = new URLSearchParams(queryString);
 const id = params.get('id');
 
 loginModal();
-youAreLoggedIn();
+
 
 if(!id) {
     document.location.href = "/";

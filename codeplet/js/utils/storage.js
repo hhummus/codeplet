@@ -15,10 +15,11 @@ export function saveUser(user) {
 export function getUsername() {
     const user = getFromStorage(userKey);
 
-    if(user) {
-        return user.username;
-    }
-    return null
+     /* if(user) {
+    return user.username;
+     } */
+
+    return user
 }
 
 export function saveToStorage(key, value) {

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Helena Løkkeberg" />
+    <meta name="description" content="Wikipedia styled platform for coders to meet and share their errors and how to solve common flaws when coding." />
+    <title>Wikipedia for programmers | add Post</title>
+    <link rel="stylesheet" href="scss/addPost.css" />
+    </head>
+    <body>
+    <header class="topnav">
+        <h1 class="topnav__title"> code </h1>
+
+        <div>
+            <button type="button" class="topnav__buttonElement active" id="openModal">Log in</button>
+            <div id="myModal" class="modal">
+                 <!-- Modal content -->
+                <div class="modal-content">
+                <span class="close">&times;</span>
+                <form id="logInForm">
+                    <div class="formInput">
+                        <label>
+                            Name <br />
+                            <input name="firstName" id="name" placeholder="name"/>
+                        </label>
+                        <div class="form-error" id="firstNameError">Please enter your first name.</div>
+                    </div>
+                    <div class="formInput">
+                        <label>
+                            Password (minimum 6 characters)<br />
+                            <input type="password" id="password" placeholder="password"/>
+                        </label>
+                        <div class="form-error" id="passwordError">Your password is too short. Please try agaian.</div>
+                    </div>
+                    <div class="formInput">
+                      
+                    </div>
+                    <div class="formInput">
+                        <button class="login">Log In</button>
+                    </div>
+                </form>
+            </div> 
+        </div>
+    </header>
+    <main>
+        <button class="backOnePage" onclick="history.go(-1)"><</button>
+
+        <div class="createFaq">
+            <form>
+                <legend id="legend">Create FAQ</legend>
+                <label for="question">Question</label><br>
+                <textarea id="question" name="question" required="required" rows="2" cols="30"></textarea>
+                <label for="answer">Answer</label><br>
+                <textarea id="answer" name="answer" required="required" rows="4" cols="40"></textarea>
+                <input type="button" value="Create FAQ" id="creatingFaq">
+              </form>
+        </div>
+
+    </main>
+    <script src="js/createPost.js" type="module"></script>
+    </body>

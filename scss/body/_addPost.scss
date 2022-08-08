@@ -1,0 +1,36 @@
+.addPost {
+    margin: 1rem 0 2rem 2rem;
+}
+
+.addPost a {
+    text-decoration: none;
+    font-weight: 500;
+    color: $darkgreen;
+}
+
+.addPost a:hover{
+    border-bottom: 1px solid $darkgreen;
+    
+}
+
+.backOnePage {
+        margin-top: 5rem;
+        cursor: pointer;
+        padding: 1.2rem;
+        background-color: $lightgreen;
+        border: none;
+}
+
+.createFaq{
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+#creatingFaq {
+    cursor: pointer;
+    margin-top: 2rem;
+    background-color: $darkgreen;
+    color: $activequestionbg;
+    border: none;
+    border-radius: 5rem;
+}

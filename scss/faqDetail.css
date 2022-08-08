@@ -1,0 +1,168 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.topnav__buttonElement {
+  cursor: pointer;
+  margin: 2rem 0 0 0;
+  padding: 0.5em 1em 0.5em 1em;
+  background: white;
+  color: #0e6218;
+  border: 1px solid #0e6218;
+  border-radius: 5rem;
+}
+
+.topnav__buttonElement:hover, .topnav__buttonElement:active {
+  background-color: #c2d7c5;
+  color: #0e6218;
+  border: none;
+  -webkit-transition: background-color 500ms;
+  transition: background-color 500ms;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: black;
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.form-error {
+  display: none;
+  color: #760505;
+  font-size: 0.9rem;
+  margin-top: 2px;
+}
+
+.warning {
+  background-color: #7c6c34;
+  padding: 1rem;
+}
+
+.success {
+  background-color: #0e6218;
+  padding: 1rem;
+}
+
+input {
+  width: 100%;
+  margin-top: 2px;
+  padding: 10px;
+  font-size: 16px;
+}
+
+label {
+  display: block;
+  margin-top: 1rem;
+}
+
+.topnav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 2rem 0 2rem;
+}
+
+.topnav__title {
+  margin: 2rem 0 0 0;
+}
+
+.detailPage {
+  margin-top: 5rem;
+  background-color: inset 0 0 5px #dddada;
+}
+
+.detailPage__backOnePage {
+  cursor: pointer;
+  padding: 1.2rem;
+  background-color: #c2d7c5;
+  border: none;
+}
+
+.detailPage__faq {
+  padding: 3rem 0 10rem 0;
+  width: 70vw;
+  margin: 0 auto;
+}
+
+.detailPage__question {
+  font-size: 15px;
+}
+
+.detailPage__answer {
+  padding-top: 1rem;
+}
+
+.detailPage__lastEdit {
+  padding-top: 3rem;
+  font-size: 12px;
+  color: #c7c5c5;
+}
+
+.editDeleteFaq {
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  background-color: #fdf4c3;
+  padding: 1rem 0;
+}
+
+.editDeleteFaq__button {
+  cursor: pointer;
+  border: none;
+  background-color: #fdf4c3;
+  font-size: 15px;
+  color: #7c6c34;
+}
+/*# sourceMappingURL=faqDetail.css.map */

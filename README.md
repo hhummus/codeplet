@@ -7,14 +7,14 @@ To create a forum where people can ask about programming questions. A QA website
 - You can log in
 - You can search the forum for questions without being logged in
 
----------- looged in users can --------
+_logged in users can
 - create own questions
 - edit said questions
 - delete said questions
 
----- Crendentials to log in -------
-username: this-is-admin
-pwd: admin-123456
+_Crendentials to log in 
+- username: this-is-admin
+- pwd: admin-123456
 
 
 
